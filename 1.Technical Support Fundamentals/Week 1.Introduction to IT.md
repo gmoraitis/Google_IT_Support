@@ -51,3 +51,5 @@ For more information about logic gates, check out the [link here.](https://simpl
 -  The operating system allows hardware to communicate with the system
 -  The software layer is how we as humans interact with our computers
 - The last layer may not seem like it's part of the system, but it's an essential layer of the computer architecture, the user.
+
+[Back to main](/README.md)
