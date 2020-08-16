@@ -30,7 +30,7 @@
 
 ### Application Layer
 - The application layer is the highest abstraction layer of the TCP/IP model that provides the interfaces and protocols needed by the users.
-----
+
 ## The Basics of Networking Devices
 ### Cables
 - Connecting various devices to eachother and allowning data to transmitted over them.The connection is called point to point.
@@ -43,7 +43,7 @@
         - They contain individual optical fibers,which are tiny tubes made out of glass about the width of a human hair.
         - They uses portions of light to represents the ones and zeros of the data.
         - They are quicker than the Copper cables but more expensive and fragale.
----
+
 
 ### Hubs and Switches
 - Hubs and switches are the primary devices used to connect computers on a single network, usually referred to as a LAN, or local area network.They inspect Ethernet data to determine where to send things.
@@ -66,8 +66,8 @@
 - Client is something that request the data from a server 
 - In most network topographies, each node is primarily either a server, or a client.
 
---- 
-### The Physical Layer
+
+## The Physical Layer
 ### Twisted Pair Cabling and Duplexing
 - Modulation in the Copper cable is the way of varying the voltage across this cable.
 - When used for computer networks, this kind of modulation is more specifically known as line coding. 
@@ -81,7 +81,6 @@
 ### Network Ports and Patch Panels
 - The most common port is the RJ45.
 
----
 ## The Data Link Layer
 ### Ethernet and MAC Addresses
 - Ethernet and Wifi
@@ -113,7 +112,9 @@
 - VLAN Header indicates that the frame itself is whats called a VLAN frame.If a VLAN frame is present the Ether type field follows it.
 - VLAN or Virtual LAN is a technique that lets you have multiple logical LANs operating on the same physical equipment.
 - Next is the Payload .In networking terms,is the actual data being transported ,which is everything that is not a header.
-- FCS (Frame Check Sequence) A 4byte or 32-bit number that represents a checksum value for the entire frame.This checksume value is calculated by performing what is known as a cyclical redundancy check against the frame.     
+- FCS (Frame Check Sequence) A 4byte or 32-bit number that represents a checksum value for the entire frame.This checksume value is calculated by performing what is known as a cyclical redundancy check against the frame.    
+
+[Back to main](/README.md)
 
 
 
