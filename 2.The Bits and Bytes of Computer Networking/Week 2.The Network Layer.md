@@ -1,4 +1,4 @@
-## The Network Layer
+# The Network Layer
 
 ### IP Addresses
 - IP addresses are a 32 bit long numbers made up of four octets, and each octet is normally described in decimal numbers. 8 bits of data or a single octet can represent all decimal numbers from 0 to 255. For example, 12.30.56.78 is a valid IP address, but 123.456.789.100 would not be.

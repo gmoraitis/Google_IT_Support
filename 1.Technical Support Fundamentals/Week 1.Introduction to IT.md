@@ -1,4 +1,4 @@
-## History of Computing
+# History of Computing
 
 ### From Abacus to Analytical Engine
 - A computer is a device that stores and processes data by performing calculations.

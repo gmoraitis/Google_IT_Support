@@ -10,3 +10,5 @@
 ### <a href="2.The Bits and Bytes of Computer Networking/Week 1.Introduction to Networking.md" target="_top">Week 1.Introduction to Networking</a>
 
 ### <a href="2.The Bits and Bytes of Computer Networking/Week 2.The Network Layer.md" target="_top">Week 2.The Network Layer</a>
+
+### <a href="2.The Bits and Bytes of Computer Networking/Week 3.The Transport and Application Layers.md" target="_top">Week 3.The Transport and Application Layers</a>
