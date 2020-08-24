@@ -2,20 +2,74 @@
 ### My notes from the lectures for study.
 
 
-## 1.Technical Support Fundamentals
-
-### <a href="1.Technical Support Fundamentals/Week 1.Introduction to IT.md" target="_top">Week 1.Introduction to IT</a>
-
-
-## 2.The Bits and Bytes of Computer Networking
+## 1. Technical Support Fundamentals
 
 <details>
+<summary>Week 1. Introduction to IT</summary>
 
-### <a href="2.The Bits and Bytes of Computer Networking/Week 1.Introduction to Networking.md" target="_top">Week 1.Introduction to Networking</a>
+# History of Computing
 
+### From Abacus to Analytical Engine
+- A computer is a device that stores and processes data by performing calculations.
+
+- Abacus is one of the earliest known computers
+
+- The first major step forward was the invention of the mechanical calculator in the 17th by Blaise Pascal. It was limited to addition, subtraction, multiplication and division for pretty small numbers. 
+- In the 1800s, a man by the name of Joseph Jacquard invented a programmable loom.
+-  Babbage built what was called a difference engine. Babbage's follow up to the difference engine was a machine he called the Analytical Engine. It took the powerful insights of a mathematician named Ada Lovelace to realize the true potential of the analytical engine. She was the first person to recognize that the machine could be used for more than pure calculations. She developed the first algorithm for the engine. It was the very first example of computer programming. 
+- An algorithm is just a series of steps that solves specific problems.
+
+
+### The Path to Modern Computers
+- Cryptography is the art of writing and solving codes
+- A magnetic tape worked by magnetizing data onto a tape
+- The ENIAC was one of the earliest forms of general purpose computers
+- The very first compiler was invented by Admiral Grace Hopper.Compilers made it possible to translate human language via a programming language into machine code
+- Eventually, the industry gave way to the first hard disk drives and microprocessors
+- Then in the 1970s, a young engineer named Steve Wozniak invented the Apple I, a single-board computer MIT for hobbyists. With his friend Steve Jobs, they created a company called Apple Computer.
+-  In the 1980s, IBM introduced its personal computer. It was released with a primitive version of an operating system called MS DOS or Microsoft Disk Operating System.
+- With huge players in the market like Apple Macintosh and Microsoft Windows taking over the operating systems space, a programmer by the name of Richard Stallman started developing a free Unix-like operating system. Unix was an operating system developed by Ken Thompson and Dennis Ritchie, but it wasn't cheap and wasn't available to everyone.
+- Stallman created an OS that he called GNU. It was meant to be free to use with similar functionality to Unix. Unlike Windows or Macintosh, GNU wasn't owned by a single company, its code was open source which meant that anyone could modify and share it. GNU didn't evolve into a full operating system, but it set a foundation for the formation of one of the largest open source operating system, Linux, which was created by Linus Torvalds
+
+## Digital Logic
+### Computer Language
+- The communication that a computer uses is referred to as binary system, also known as base-2 numeral system.This means that it only talks in 1s and 0s.
+- In computing terms, we group binary into 8 numbers, or bits. Technically, a bit is a binary digit
+-  A group of 8 bits is referred to as a byte. A byte of zeroes and ones could look like 10011011. Each byte can store one character, and we can have 256 possible values, thanks to the base-2 system, 2 to the 8th. In computer talk, this byte could mean something like the letter C.
+
+### Character Encoding
+-  Character encoding is used to assign our binary values to characters so that we as humans can read them.
+- The oldest character encoding standard used this ASCII
+- Then came UTF 8. The most prevalent encoding standard used today
+
+### Binary
+- Imagine we have a light bulb and a switch that turns the state of the light on or off. If we turn the light on, we can denote that state is one. If the light bulb is off, we can represent the state is zero. Now imagine eight light bulbs and switches, that represents eight bits with a state of zero or one.
+
+### Supplemental Reading on Logic Gates
+For more information about logic gates, check out the [link here.](https://simple.wikipedia.org/wiki/Logic_gate)
+### How to Count in Binary
+- Imagine that we have the following binary number 00001010 and we want to convert it to a decimal number.We check to see what ones are switched on.2+8 = 10.
+
+## Computer Architecture Layer
+### Abstraction
+- We use the concept of abstraction to take a relatively complex system and simplify it for our use.
+- One other simple example of abstraction in an IT role that you might see a lot is an error message. We don't have to dig through someone else's code and find a bug.
+### Computer Architecture Overview
+-  A computer can be cut into four main layers, hardware, operating system, software, and users.
+- The hardware layer is made up of the physical components of a computer
+-  The operating system allows hardware to communicate with the system
+-  The software layer is how we as humans interact with our computers
+- The last layer may not seem like it's part of the system, but it's an essential layer of the computer architecture, the user.
+
+[Back to main](/README.md)
+
+</details>
+
+
+
+## 2. The Bits and Bytes of Computer Networking
 <details>
-
-# Introduction to Computer Networking
+<summary>Week 1. Introduction to Computer Networking</summary>
 
 ### The TCP/IP Five-Layer Network Model
 
@@ -133,19 +187,13 @@
 
 [Back to main](/README.md)
 
-
-
-
-
-
-
 </details>
 
-### <a href="2.The Bits and Bytes of Computer Networking/Week 2.The Network Layer.md" target="_top">Week 2.The Network Layer</a>
+
 
 <details>
 
-# The Network Layer
+<summary>Week 2. The Network Layer</summary>
 
 ### IP Addresses
 - IP addresses are a 32 bit long numbers made up of four octets, and each octet is normally described in decimal numbers. 8 bits of data or a single octet can represent all decimal numbers from 0 to 255. For example, 12.30.56.78 is a valid IP address, but 123.456.789.100 would not be.
@@ -265,21 +313,107 @@ It indicates what version of Internet protocol is being used. The most common ve
     - 192.168.0.0/16
 
         
+[Back to main](/README.md)
+
+</details>
+
+<details>
+<summary>Week 3. The Transport and Application Layers</summary>
+
+## Introduction to the Transport and Application Layers
+- Transport layer allows traffic to be directed to specific network applications
+- Application layer allows these applications to communicate in a way they understand.
+
+## The Transport Layer
+### The Transport Layer
+- The transport layer has the ability to multiplex and demultiplex, which sets this layer apart from all others.
+- Multiplexing in the transport layer means that nodes on the network have the ability to direct traffic toward many different receiving services.
+- Demultiplexing is the same concept, just at the receiving end, it's taking traffic that's all aimed at the same node and delivering it to the proper receiving service.
+- The transport layer handles multiplexing and demultiplexing through ports.
+A port is a 16-bit number that's used to direct traffic to specific services running on a networked computer.
+- Different network services run while listening on specific ports for incoming requests.
+- A socket address or socket number (10.1.1.100:80) its the Ports which are normally denoted with a colon after the IP address.
+- FTP is an older method used for transferring files from one computer to another, but you still see it in use today.
+FTP traditionally listens on port 21, so if you wanted to establish a connection to an FTP server running on the same IP that our example web server was running on, you direct traffic to 10.1.1.100 port 21.
+
+### Dissection of a TCP Segment
+- An IP datagram encapsulates a TCP segment.
+    1. An Ethernet frame has a payload section which is really just the entire contents of an IP datagram.
+    2. An IP datagram has a payload section and this is made up of what's known as a TCP segment.
+    3. So the TCP segment will also have a payload section that ,as athe others before it,will include the contents of the Application Layer.
+- A TCP segment is made up of a TCP header and a data section.
+    - This data section,is just another payload area for where the application layer places its data.
+
+    - TCP header.
+        - Source port and the Destination port fields.
+        - The destination port is the port of the service the traffic is intended for.
+        - A source port is a high numbered port chosen from a special section of ports known as ephemeral ports.
+        -  the sequence number. This is a 32-bit number that's used to keep track of where in a sequence of TCP segments this one is expected to be. The sequence number in a header is used to keep track of which segment out of many this particular segment might be.
+        - The acknowledgment number is the number of the next expected segment. A sequence number of one and an acknowledgement number of two could be read as this is segment one, expect segment two next. 
+        - The data offset field comes next. This field is a four-bit number that communicates how long the TCP header for this segment is.
+        - Then, we have six bits that are reserved for the six TCP control flags.
+        - A TCP window (16-bits) specifies the range of sequence numbers that might be sent before an acknowledgement is required.
+        -  A 16-bit checksum. It operates just like the checksum fields at the IP and Ethernet level.The checksum is calculated across the entire segment and is compared with the checksum in the header to make sure that there was no data lost or corrupted along the way.
+        - The Urgent pointer field is used in conjunction with one of the TCP control flags to point out particular segments that might be more important than others.
+        - Options field.
+        - Padding which is just a sequence of zeros to ensure that the data payload section begins at the expected location.
 
 
+### TCP Control Flags and the Three-way Handshake
+- The way TCP establishes a connection, is through the use of different TCP control flags, used in a very specific order.
 
+- 6 TCP control flags
+    - The first flag is URG, this is short for Urgent. A value of one here indicates that the segment is considered urgent and that the urgent pointer field has more data about this
+    - The second flag is ACK, short for acknowledge. A value of one in this field means that the acknowledgment number field should be examined. 
+    - The third flag is PSH, which is short for Push. The transmitting device wants the receiving device to push currently- buffered data to the application on the receiving end as soon as possible. (A buffer is a computing technique, where a certain amount of data is held somewhere, before being sent somewhere else).
+    - The Fourth flag is RST, short for Reset. This means, that one of the sides in a TCP connection hasn't been able to properly recover from a series of missing or malformed segments.
+    - The fifth flag is SYN, which stands for Synchronize. It's used when first establishing a TCP connection and make sure the receiving end knows to examine the sequence number field.
+    - The six flag is FIN, which is short for Finish. When this flag is set to one, it means the transmitting computer doesn't have any more data to send and the connection can be closed.
+- Transmition example
+    - To start the process off, computer A, sends a TCP segment to computer B with this SYN flag set.
+    - Computer B then responds with a TCP segment, where both the SYN and ACK flags are set.
+    - Then computer A responds again with just the ACK flag set.
+    - This is known us the three way handshake. A handshake is a way for two devices to ensure that they're speaking the same protocol and will be able to understand each other. Once the three way handshake is complete, the TCP connection is established.
+    - Since both sides have now sent SYN/ACK pairs to each other, a TCP connection in this state is operating in full duplex
+    -  To close the connection, the four way handshake happens. The computer ready to close the connection, sends a FIN flag, which the other computer acknowledges with an ACK flag. Then, if this computer is also ready to close the connection, which will almost always be the case. It will send a FIN flag. This is again responded to by an ACK flag.
 
+### TCP Socket States
+- A socket is the instantiation of an endpoint in a potential TCP connection. An instantiation is the actual implementation of something defined elsewhere. TCP sockets require actual programs to instantiate them. You can contrast this with a port which is more of a virtual descriptive thing. In other words, you can send traffic to any port you want, but you're only going to get a response if a program has opened a socket on that port.
 
+- Sockets States (Are naming different in each OS)
+    - LISTEN. Listen means that a TCP socket is ready and listening for incoming connections. You'd see this on the server side only. 
 
+    - SYN_SENT. This means that a synchronization request has been sent, but the connection hasn't been established yet. You'd see this on the client side only. 
+    - SYN_RECEIVED. This means that a socket previously in a listener state, has received a synchronization request and sent a SYN_ACK back. But it hasn't received the final ACK from the client yet. You'd see this on the server side only. 
+    - ESTABLISHED. This means that the TCP connection is in working order, and both sides are free to send each other data. You'd see this state on both the client and server sides of the connection. This will be true of all the following socket states, too. So keep that in mind. 
+    - FIN_WAIT. This means that a FIN has been sent, but the corresponding ACK from the other end hasn't been received yet. 
+    - CLOSE_WAIT. This means that the connection has been closed at the TCP layer, but that the application that opened the socket hasn't released its hold on the socket yet. 
+    - CLOSED. This means that the connection has been fully terminated, and that no further communication is possible.
 
+### Connection-oriented and Connectionless Protocols
+-  TCP is a connection-oriented protocol. A connection-oriented protocol is one that establishes a connection, and uses this to ensure that all data has been properly transmitted.
+- At the IP or Ethernet level, if a checksum doesn't compute, all of that data is just discarded. It's up to TCP to determine when to resend this data
+- TCP expects an ack for every bit of data it sends, it's in the best position to know what data successfully got delivered and can make the decision to resend a segment if needed.
+- UDP, or User Datagram Protocol. Unlike TCP, UDP doesn't rely on connections, and it doesn't even support the concept of an acknowledgement. With UDP, you just set a destination port and send the packet.UDP, or User Datagram Protocol.
 
+### Firewalls
+-  A firewall is just a device that blocks traffic that meets certain criteria.
+- Firewalls here is that they're most commonly used at the transportation layer.
+- There are firewalls that can perform inspection of application layer traffic, and firewalls that primarily deal with blocking ranges of IP addresses.
+- Firewalls that operate at the transportation layer will generally have a configuration that enables them to block traffic to certain ports while allowing traffic to other ports.
 
+## The Application Layer
 
+### The Application Layer
+- For web traffic, the application layer protocol is known as HTTP.
 
+### The Application Layer and the OSI Model
+- The OSI or Open Systems Interconnection model has seven layers, and introduces two additional layers between our transport layer and our application layer.
+- The fifth layer in the OSI model is the session layer. The concept of a session layer is that it's responsible for things like facilitating the communication between actual applications and the transport layer. It's the part of the operating system that takes the application layer data that's been unencapsulated from all the layers below it, and hands it off to the next layer in the OSI model, the presentation layer.
+- The presentation layer is responsible for making sure that the unencapsulated application layer data is actually able to be understood by the application in question. This is the part of an operating system that might handle encryption or compression of data.
 
-
-
-
+### All the Layers Working in Unison
+- 
 
 
 
@@ -289,11 +423,9 @@ It indicates what version of Internet protocol is being used. The most common ve
 
 [Back to main](/README.md)
 
-</details>
 
-### <a href="2.The Bits and Bytes of Computer Networking/Week 3.The Transport and Application Layers.md" target="_top">Week 3.The Transport and Application Layers</a>
 
-</details>
+
 
 
 
