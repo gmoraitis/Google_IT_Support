@@ -5,6 +5,7 @@
 - Application layer allows these applications to communicate in a way they understand.
 
 ## The Transport Layer
+### The Transport Layer
 - The transport layer has the ability to multiplex and demultiplex, which sets this layer apart from all others.
 - Multiplexing in the transport layer means that nodes on the network have the ability to direct traffic toward many different receiving services.
 - Demultiplexing is the same concept, just at the receiving end, it's taking traffic that's all aimed at the same node and delivering it to the proper receiving service.
@@ -81,7 +82,18 @@ FTP traditionally listens on port 21, so if you wanted to establish a connection
 - There are firewalls that can perform inspection of application layer traffic, and firewalls that primarily deal with blocking ranges of IP addresses.
 - Firewalls that operate at the transportation layer will generally have a configuration that enables them to block traffic to certain ports while allowing traffic to other ports.
 
+## The Application Layer
 
+### The Application Layer
+- For web traffic, the application layer protocol is known as HTTP.
+
+### The Application Layer and the OSI Model
+- The OSI or Open Systems Interconnection model has seven layers, and introduces two additional layers between our transport layer and our application layer.
+- The fifth layer in the OSI model is the session layer. The concept of a session layer is that it's responsible for things like facilitating the communication between actual applications and the transport layer. It's the part of the operating system that takes the application layer data that's been unencapsulated from all the layers below it, and hands it off to the next layer in the OSI model, the presentation layer.
+- The presentation layer is responsible for making sure that the unencapsulated application layer data is actually able to be understood by the application in question. This is the part of an operating system that might handle encryption or compression of data.
+
+### All the Layers Working in Unison
+- 
 
 
 
